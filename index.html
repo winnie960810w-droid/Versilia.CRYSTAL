@@ -551,7 +551,7 @@ footer .brand{color:var(--ink)}
               </div>
               <div class="pay-panel" id="payCard">
                 <p class="pay-amt">付款金額 <b id="amtCard"></b> <button type="button" class="mini" id="copyAmtCard">複製</button></p>
-                <a class="btn card" href="#" target="_blank" rel="noopener" id="cardBtn">前往刷卡付款 <span class="applepay light">Apple Pay</span></a>
+                <a class="btn card" href="https://a.ecpay.tw/fdw1" target="_blank" rel="noopener" id="cardBtn">前往刷卡付款 <span class="applepay light">Apple Pay</span></a>
                 <small>安全付款頁，可用信用卡付款。付款完成後請截圖，最後一步一起傳給寧汐。</small>
               </div>
               <div class="pay-panel" id="payBank" hidden>
@@ -601,7 +601,7 @@ footer .brand{color:var(--ink)}
 
 <script>
 /* ===== 可自行修改的設定 ===== */
-const CONFIG = {"lineUrl":"https://lin.ee/wVUwczU3","cardUrl":"","applePay":false,"bank":{"code":"700","name":"臺中大智郵局","account":"00213330507525","holder":"王薇寧"},"pixiuEnabled":true,"pixiuPrice":0,"charmCount":0,"charmImg":true,"tiers":[{"id":"basic","name":"入門款","price":2088,"desc":"第一條靈數手鍊"},{"id":"cp","name":"CP值套餐","price":2888,"desc":"最多人選擇","tag":"人氣推薦"},{"id":"premium","name":"尊貴款","price":3288,"desc":"高階晶種","tag":"一次補齊","tagStyle":"violet"}]};
+const CONFIG = {"lineUrl":"https://lin.ee/wVUwczU3","cardUrl":"https://a.ecpay.tw/fdw1","applePay":false,"bank":{"code":"700","name":"臺中大智郵局","account":"00213330507525","holder":"王薇寧"},"pixiuEnabled":true,"pixiuPrice":0,"charmCount":0,"charmImg":true,"tiers":[{"id":"basic","name":"入門款","price":2088,"desc":"第一條靈數手鍊"},{"id":"cp","name":"CP值套餐","price":2888,"desc":"最多人選擇","tag":"人氣推薦"},{"id":"premium","name":"尊貴款","price":3288,"desc":"高階晶種","tag":"一次補齊","tagStyle":"violet"}]};
 
 /* ===== 資料：數字 ===== */
 const COLOR = {1:"紅",2:"橙",3:"黃",4:"綠",5:"藍",6:"靛",7:"紫",8:"金粉",9:"白"};
@@ -1005,6 +1005,6 @@ renderAll();
 document.fonts&&document.fonts.ready.then(()=>{});
 </script>
 
-<script>(function(){var b=document.querySelector('.pay-tabs button[data-p=bank]');if(b)b.click();var c=document.querySelector('.pay-tabs button[data-p=card]');if(c)c.remove();var s=document.getElementById('stInv');if(s)s.remove();document.querySelectorAll('.st-no').forEach(function(e,i){e.textContent='STEP '+(i+1);});})();</script>
+<script>(function(){var s=document.getElementById('stInv');if(s)s.remove();document.querySelectorAll('.st-no').forEach(function(e,i){e.textContent='STEP '+(i+1);});})();</script>
 </body>
 </html>
